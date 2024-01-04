@@ -54,18 +54,18 @@ class ProductManager {
         if (!title || !description || !code || !category) {
             console.log("Error: Todos los campos de texto son obligatorios.");
             console.log(title, description, code, category)
-            return;
+            return {status: 400, msg:"Error: Todos los campos de texto son obligatorios."};
         }
 
         // Verifica que el precio y el stock sean números y no estén indefinidos
         if (typeof price !== 'number' || typeof stock !== 'number') {
             console.log("Error: Precio y stock deben ser números.");
-            return;
+            return  {status: 400, msg:"Error: Precio y stock deben ser números."};
         }
 
         if (this.products.some(product => product.code === code)) {
             console.log("Error: El código ya existe para otro producto.");
-            return;
+            return{status: 400, msg:"Error: El código ya existe para otro producto."};
         }
 
         const product = {
@@ -83,6 +83,7 @@ class ProductManager {
         this.products.push(product);
         await this.saveProducts();
         console.log(`El producto ${title} ha sido agregado con éxito.`);
+        return{status: 200, msg:`El producto ${title} ha sido agregado con éxito.`};
     }
 
 

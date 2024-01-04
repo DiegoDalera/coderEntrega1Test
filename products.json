@@ -91,13 +91,14 @@
   },
   {
     "id": 11,
-    "title": "Zapatos Deportivos",
-    "description": "Zapatos deportivos cómodos para correr, de alta durabilidad y soporte.",
-    "price": 59.99,
+    "title": "producto prueba test update",
+    "description": "Este es un producto prueba update",
+    "price": 200,
     "thumbnails": [],
-    "code": "SPRT1234",
-    "stock": 150,
+    "code": "ghi789",
+    "stock": 25,
     "status": true,
-    "category": "Calzado Deportivo"
+    "category": "Calzado Deportivo",
+    "thumbnail": []
   }
 ]
