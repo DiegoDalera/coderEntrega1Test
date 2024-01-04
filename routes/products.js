@@ -32,8 +32,8 @@ router.get('/:pid', async (req, res) => {
 
 // Ruta raíz POST /api/products/
 router.post('/', async (req, res) => {
-  const { title, description, price, thumbnail, code, stock } = req.body;
-  await productManager.addProduct({ title, description, price, thumbnail, code, stock });
+  const { title, description, price,category, thumbnail, code, stock } = req.body;
+  await productManager.addProduct({ title, description,category, price, thumbnail, code, stock });
   res.json({ message: 'Producto agregado con éxito' });
 });
 

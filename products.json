@@ -88,5 +88,16 @@
     "thumbnail": "Sin imagen",
     "code": "jkl012",
     "stock": 25
+  },
+  {
+    "id": 11,
+    "title": "Zapatos Deportivos",
+    "description": "Zapatos deportivos cómodos para correr, de alta durabilidad y soporte.",
+    "price": 59.99,
+    "thumbnails": [],
+    "code": "SPRT1234",
+    "stock": 150,
+    "status": true,
+    "category": "Calzado Deportivo"
   }
 ]
